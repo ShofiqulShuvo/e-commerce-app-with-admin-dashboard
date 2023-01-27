@@ -34,7 +34,7 @@
       "email": "dummy01@dummy.com",
       "password": "1234",
       "userType": "admin",
-      "status": "deactive",
+      "status": "active",
       "id": 3
     },
     {
@@ -43,7 +43,7 @@
       "email": "dummy02@dummy.com",
       "password": "1234",
       "userType": "admin",
-      "status": "active",
+      "status": "deactive",
       "id": 4
     }
   ],

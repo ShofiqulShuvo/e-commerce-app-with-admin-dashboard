@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
 
-import "../../Assets/Admin/css/style.css";
+import "../../Assets/Admin/css/layout.css";
 import Footer from "./Footer";
 import { Outlet } from "react-router-dom";
 
