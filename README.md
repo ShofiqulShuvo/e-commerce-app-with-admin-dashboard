@@ -17,7 +17,7 @@
     npm start 
 ```
    
-## Used tools and tecnology
+## Used tools and technology
 
 - React
 - Redux
