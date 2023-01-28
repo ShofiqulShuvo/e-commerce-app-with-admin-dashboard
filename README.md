@@ -1,4 +1,7 @@
 # E-commerce app with Admin Dashboard using React Redux-toolkit 
+   
+## Live Demo
+[view  live demo](https://my-e-commerce-ap.netlify.app/)
 
 ## installation   
 
