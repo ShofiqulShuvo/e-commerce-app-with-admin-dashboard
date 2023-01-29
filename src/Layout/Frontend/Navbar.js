@@ -16,6 +16,7 @@ const Navbar = () => {
 
   const handleLogout = () => {
     dispatch(logout())
+    setShowNav(!showNav)
   };
 
   return (
@@ -35,13 +36,13 @@ const Navbar = () => {
             showNav ? "showNav" : null
           }`}
         >
-          <NavLink className="navLink" to={"/"} end>
+          <NavLink className="navLink" to={"/"} onClick={() => setShowNav(!showNav)} end>
             Home
           </NavLink>
-          <NavLink className="navLink" to={"/products"}>
+          <NavLink className="navLink" to={"/products"} onClick={() => setShowNav(!showNav)}>
             Products
           </NavLink>
-          <NavLink className="navLink cart-link" to={"/cart"}>
+          <NavLink className="navLink cart-link" to={"/cart"} onClick={() => setShowNav(!showNav)}>
             <span>Cart</span>
             <span className="total-product">{`(${totalProduct})`}</span>
           </NavLink>
@@ -53,13 +54,13 @@ const Navbar = () => {
                   </button>
                   <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                       <li>
-                          <Link className="dropdown-item" to={'/profile'}>Profile</Link>
+                          <Link className="dropdown-item" to={'/profile'} onClick={() => setShowNav(!showNav)}>Profile</Link>
                       </li>
                       <li>
-                          <Link className="dropdown-item" to={'/order'}>Order</Link>
+                          <Link className="dropdown-item" to={'/order'} onClick={() => setShowNav(!showNav)}>Order</Link>
                       </li>
                       <li>
-                          <button className="dropdown-item" onClick={handleLogout}>Log out</button>
+                          <button className="dropdown-item" onClick={handleLogout} >Log out</button>
                       </li>
                   </ul>
               </div>
@@ -68,6 +69,7 @@ const Navbar = () => {
               <Link
                className="ms-0 ms-md-3 mt-3 mt-md-0 btn btn-sm btn-primary"
                to={'/login'}
+               onClick={() => setShowNav(!showNav)}
               >
                   Login
               </Link>
