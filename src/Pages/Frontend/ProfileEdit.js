@@ -74,7 +74,7 @@ const ProfileEdit = () => {
         toast.dismiss()
         toast.info('updating...')
         
-        fetch(`${BASE_URL}/users/${id}`, patchConfigure(profileData))
+        fetch(`${BASE_URL}/customers/${id}`, patchConfigure(profileData))
         .then(res => {
             if (!res.ok){
                 throw new Error(res.statusText)
